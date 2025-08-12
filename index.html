@@ -1,159 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tecturo Ltd</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f8f8f8;
-      color: #333;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      background: #fff;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav h1 {
-      font-size: 24px;
-    }
-
-    nav ul {
-      display: flex;
-      gap: 20px;
-      list-style: none;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
-    .hero-section {
-      background: url('tecturo_bg.jpg') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      text-align: center;
-    }
-
-    .overlay {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 40px;
-      border-radius: 8px;
-    }
-
-    .overlay h1 {
-      font-size: 40px;
-      color: white;
-      margin-bottom: 15px;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-    }
-
-    .overlay p {
-      font-size: 18px;
-      color: #eee;
-      margin-bottom: 20px;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-    }
-
-    .cta-button {
-      padding: 12px 24px;
-      background-color: #ff6600;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      box-shadow: 2px 2px 5px #000;
-    }
-
-    section {
-      padding: 60px 40px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      margin-bottom: 20px;
-      font-size: 28px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #222;
-      color: white;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecturo Ltd</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: white;
+            padding: 15px 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://tse1.mm.bing.net/th/id/OIP.IOUMZECqmkSdVT2020guLwHaE7?w=315&h=315&c=7') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+        .hero button {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        .section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .section h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+        }
+        footer a {
+            color: orange;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-  <nav>
-    <h1>Tecturo Ltd</h1>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#industries">Industries</a></li>
-      <li><a href="#careers">Careers</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
-  <header class="hero-section">
-    <div class="overlay">
-      <h1>Expert Engineering & Automation Solutions</h1>
-      <p>Innovative design, prototyping, and smart manufacturing.</p>
-      <a href="#contact" class="cta-button">Get in Touch</a>
-    </div>
-  </header>
+    <header>
+        <h1>Tecturo Ltd</h1>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Industries</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
-  <section id="about">
-    <h2>About Tecturo</h2>
-    <p>
-      Tecturo Ltd is a Milton Keynes, United Kingdom-based engineering company specializing in
-      cutting-edge manufacturing process development, equipment prototyping, and smart automation
-      solutions for modern industries.
-    </p>
-  </section>
+    <section class="hero">
+        <h2>Expert Engineering & Automation Solutions</h2>
+        <p>Innovative design, prototyping, and smart manufacturing.</p>
+        <button onclick="window.location.href='#contact'">Get in Touch</button>
+    </section>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Precision CNC Machining</li>
-      <li>Design for Manufacturability (DFM)</li>
-      <li>Fixture and Tooling Design</li>
-      <li>Automation Systems Integration</li>
-      <li>Rapid Prototyping</li>
-    </ul>
-  </section>
+    <section class="section" id="services">
+        <h3>Our Services</h3>
+        <ul>
+            <li>Precision CNC Machining</li>
+            <li>Design for Manufacturability (DFM)</li>
+            <li>Fixture and Tooling Design</li>
+            <li>Automation Systems Integration</li>
+            <li>Rapid Prototyping</li>
+        </ul>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:info@tecturo.co.uk">info@tecturo.co.uk</a></p>
-    <p>Phone: +44 (0)1908 123 456</p>
-    <p>Location: Milton Keynes, United Kingdom</p>
-  </section>
+    <section class="section" id="contact">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:info@tecturo.co.uk">info@tecturo.co.uk</a></p>
+        <p>Location: Milton Keynes, United Kingdom</p>
+    </section>
 
-  <footer>
-    <p>© 2025 Tecturo Ltd. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2025 Tecturo Ltd | Designed with passion</p>
+    </footer>
+
 </body>
 </html>
